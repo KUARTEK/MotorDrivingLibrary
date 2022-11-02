@@ -1,6 +1,5 @@
 #include "MotorDriver.h"
 
-
 #define EN_DIGITALWRITE
 #define STEP_DIGITALWRITE
 #define DIR_DIGITALWRITE
@@ -184,7 +183,7 @@ MotorDriver::MotorDriver(int enPin, int stepPin, int dirPin)
             break;
     }
 }
-EN_DIGITALWRITE LOW;
+// EN_DIGITALWRITE LOW;
 void MotorDriver::Clockwise(int step)
 {
     DIR_DIGITALWRITE LOW;
